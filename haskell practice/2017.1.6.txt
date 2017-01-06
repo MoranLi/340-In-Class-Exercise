@@ -1,0 +1,31 @@
+Prelude> 5 + 3
+8
+Prelude> f x = 3 * x + 1
+Prelude> f 3
+10
+Prelude> y x = f x - 2
+Prelude> y 3
+8
+Prelude> larger x y = if x > y then x else y
+Prelude> larger 2 3
+3
+Prelude> larger 3 2
+3
+Prelude> largest x y z = larger z (larger x y)
+Prelude> largest 1 2 3
+3
+Prelude> fraction x | x == 0 =1 |otherwise =  x * fraction(x-1)
+Prelude> fraction 4
+24
+Prelude> sqrt x n | n == 1 = 1 | otherwise = (y + x/y)/2 where y = sqrt x (n - 1)
+Prelude> sqrt 4 2
+2.5
+Prelude> sqrt 4 3
+2.05
+Prelude> sqrt 4 4
+2.000609756097561
+Prelude> sqrt 4 5
+2.0000000929222947
+Prelude> sqrt 4 6
+2.000000000000002
+(find sqrt of x and get right result when n == infinite)
